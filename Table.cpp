@@ -58,7 +58,6 @@ bool Table::PRINT(int stid) {
     //search for the student id
     do {
         if(temp->getValue()->getId() == stid) { //if found
-            cout << "found student!" << endl;
             return true;
         } else { //if not found
             if(temp->getNext() != NULL) { //if not the last value

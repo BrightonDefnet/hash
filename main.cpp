@@ -18,5 +18,10 @@ int main() {
     int id;
     cout << "\nenter id to search for"  << endl;
     cin >> id;
-    t->PRINT(id);
+    bool b = t->PRINT(id);
+    if(b) {
+        cout << "\nstudent found!" << endl;
+    } else {
+        cout << "\nstudent not found" << endl;
+    }
 }
