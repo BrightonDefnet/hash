@@ -13,6 +13,12 @@ class Table {
         bool DELETE(int); //delete a student from the list
 
     private:
+        Node* sizeOne[100] = {nullptr};
+        Node* sizeTwo[200] = {nullptr};
+        Node* sizeThree[400] = {nullptr};
+        Node* sizeFour[800] = {nullptr};
+        Node* sizeFive[1600] = {nullptr};
+        int current = 1;
 };
 
 #endif

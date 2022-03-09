@@ -11,5 +11,12 @@
 using namespace std;
 
 int main() {
-    cout << "stuff" << endl;
+    Table* t = new Table();
+    t->ADD();
+    t->ADD();
+
+    int id;
+    cout << "\nenter id to search for"  << endl;
+    cin >> id;
+    t->PRINT(id);
 }
