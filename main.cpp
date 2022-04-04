@@ -30,6 +30,9 @@ int main() {
     genStudent(t);
     genStudent(t);
     genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    t->PRINT(4);
 }
 
 ///randomly generate a new student
@@ -59,26 +62,5 @@ void genStudent(Table* t) {
     int sid = id;
     id += 1;
     float gpa = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4));
-    cout << firstname << endl;
-    cout << lastname << endl;
-    cout << sid << endl;
-    cout << gpa << endl;
-    
     t->ADD(firstname, lastname, sid, gpa);
 }
-
-/*
-//get student data
-string first;
-string last;
-int id;
-float gpa;
-cout << "\nenter first name" << endl;
-cin >> first;
-cout << "\nenter last name" << endl;
-cin >> last;
-cout << "\nenter student id" << endl;
-cin >> id;
-cout << "\nenter student gpa" << endl;
-cin >> gpa;
-*/

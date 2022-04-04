@@ -9,7 +9,7 @@ class Table {
     public:
         Table(); //default constructor
         void ADD(string, string, int, float); //add a student to the table
-        void PRINT(); //print a student's info
+        void PRINT(int); //print a student's info
         void DELETE(); //delete a student from the list
 
     private:
