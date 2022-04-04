@@ -14,13 +14,26 @@
 using namespace std;
 
 int id = 0;
-void genStudent();
+void genStudent(Table* t);
 
 int main() {
+    Table* t = new Table();
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
+    genStudent(t);
 }
 
 ///randomly generate a new student
-void genStudent() {
+void genStudent(Table* t) {
     string line;
     vector<string> first;
     vector<string> last;
@@ -49,7 +62,9 @@ void genStudent() {
     cout << firstname << endl;
     cout << lastname << endl;
     cout << sid << endl;
-    cout << gpa << "\n" << endl;
+    cout << gpa << endl;
+    
+    t->ADD(firstname, lastname, sid, gpa);
 }
 
 /*

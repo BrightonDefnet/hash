@@ -4,6 +4,7 @@ Node::Node(){}
 
 Node::Node(Student* student) {
     value = student;
+    next = NULL;
 }
 
 Node::~Node() {
